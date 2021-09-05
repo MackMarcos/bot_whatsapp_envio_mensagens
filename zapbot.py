@@ -17,8 +17,7 @@ class WhatsappBot:
         self.driver.get('https://web.whatsapp.com')
         time.sleep(10)
         for grupo_ou_pessoa in self.grupos_ou_pessoas:
-            campo_grupo = self.driver.find_element_by_xpath(
-                f"//span[@title='{grupo_ou_pessoa}']")
+            campo_grupo = self.driver.find_element_by_xpath(f"//span[@title='{grupo_ou_pessoa}']")
             time.sleep(3)
             campo_grupo.click()
             chat_box = self.driver.find_element_by_class_name('_1LbR4')
