@@ -7,7 +7,7 @@ class WhatsappBot:
         # Parte 1 - A mensagem que você quer enviar
         self.mensagem = "this is a test"
         # Parte 2 - Nome dos grupos ou pessoas a quem você deseja enviar a mensagem
-        self.grupos_ou_pessoas = ["GRUPO DA FAMÍLIA", "GRUPO DE VENDAS"]
+        self.grupos_ou_pessoas = ["bot_whatsApp2","Bot_WhatsApp"]
         options = webdriver.ChromeOptions()
         options.add_argument('lang=pt-br')
         self.driver = webdriver.Chrome(
